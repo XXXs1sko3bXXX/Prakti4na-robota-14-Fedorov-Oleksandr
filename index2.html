@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="заявка, перевезення, логістика">
+    <meta name="description" content="Практична робота №14 - Форма">
+    <meta name="author" content="Федоров Олександр, КН-24">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовити перевезення | ЛогістикаТранс</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚚 ЛогістикаТранс</div>
+        <div class="header-contact">
+            <a href="tel:+380991234567">+38 (099) 123-45-67</a>
+        </div>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="menu">
+            <li><a href="index1.html">Головна</a></li>
+            <li class="has-submenu">
+                <a href="#">Послуги ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Вантажні перевезення</a></li>
+                    <li><a href="#">Міжміські перевезення</a></li>
+                    <li><a href="#">Міжнародні перевезення</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="index2.html">Замовити</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <section class="features-grid">
+        <div class="feature-item">
+            <h3>50+</h3>
+            <p>Одиниць транспорту</p>
+        </div>
+        <div class="feature-item">
+            <h3>10 років</h3>
+            <p>На ринку логістики</p>
+        </div>
+        <div class="feature-item">
+            <h3>24/7</h3>
+            <p>Підтримка клієнтів</p>
+        </div>
+        <div class="feature-item">
+            <h3>100%</h3>
+            <p>Страхування вантажу</p>
+        </div>
+    </section>
+
+    <div class="container" id="form">
+        <h2>Залишити заявку на перевезення</h2>
+        <p>Заповніть форму, і наш менеджер зв'яжеться з вами протягом 15 хвилин.</p>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Іван Іванов" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+38 (0__) ___-__-__" required>
+            </div>
+
+            <div class="form-group">
+                <label for="from">Звідки:</label>
+                <input type="text" id="from" name="from" placeholder="м. Київ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="to">Куди:</label>
+                <input type="text" id="to" name="to" placeholder="м. Львів" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cargo">Тип вантажу:</label>
+                <select id="cargo" name="cargo">
+                    <option value="standard">Стандартний (до 20 т)</option>
+                    <option value="refrigerator">Рефрижератор</option>
+                    <option value="oversized">Негабаритний</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Коментар:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Додаткова інформація..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Відправити заявку</button>
+        </form>
+    </div>
+
+    <footer id="contacts">
+        <h2>Контакти</h2>
+        <p>м. Київ, вул. Логістична, 10</p>
+        <p><a href="mailto:info@logistika.com">info@logistika.com</a></p>
+        <hr style="height: 1px; background-color: #e5e7eb; border-width:0px;">
+        <p style="font-size: 0.9rem;">
+            &copy; 2026 Федоров Олександр | КН-24, СТФК НУХТ | <time datetime="2026-11-06">06.11.2026</time>
+        </p>
+    </footer>
+
+</body>
+</html>
